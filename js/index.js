@@ -5,12 +5,28 @@ const invercion = document.getElementById('invercion')
 const formulario__inversion = document.querySelector('.formulario__inversion')
 const contacto_form = document.querySelector(".contacto_form")
 const contacto = document.querySelector(".contacto")
+const navOpen = document.querySelector(".fa-bars")
+const closebtn = document.querySelector(".closebtn")
+const btn_movil = document.querySelectorAll(".overlay-content a");
 
 contacto_form.addEventListener("submit", formulario_contacto )
 formulario__inversion.addEventListener('submit', btnInvercion)
 
 let resultados = [] ;
 
+navOpen.addEventListener('click', function () {
+  document.getElementById("myNav").style.width = "100%";
+})
+
+closebtn.addEventListener('click', function () {
+  document.getElementById("myNav").style.width = "0%";
+})
+
+btn_movil.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    document.getElementById("myNav").style.width = "0%";
+  });
+});
 
 const labels = Array.from({ length: 6 }, (_, i) => {
   return new Date(0, i).toLocaleString("es-ES", { month: "long" });

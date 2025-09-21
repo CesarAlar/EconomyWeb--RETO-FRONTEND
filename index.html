@@ -9,20 +9,34 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/ae1d5cff5f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <div class="contenedor__header contenedor">
+            
             <div class="contenedor_imagen">
                 <img src="public/logo-Economia1.png" alt="">
             </div>
-
             <nav class="navegacion">
                 <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#contacto">Contacto</a>
             </nav>
+            <!-- menu movile -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <nav class="overlay-content">
+                <a class="btn_movil" href="#nosotros">Nosotros</a>
+                <a class="btn_movil" href="#servicios">Servicios</a>
+                <a class="btn_movil" href="#contacto">Contacto</a>
+                <a href="#contenido_principal">inverción</a>
+                </nav>
+            </div>
+            <i  class="fas fa-bars"></i>
+            <!-- menu movile -->
         </div>
+        
         <div class="hero">
             <video autoplay muted loop playsinline preload="metadata" aria-hidden="true">
                 <source src="https://res.cloudinary.com/dlfotxffk/video/upload/v1758054738/economia_z0dvuf.mp4" type="video/mp4" />
