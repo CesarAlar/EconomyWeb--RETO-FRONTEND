@@ -187,7 +187,7 @@ video{
   width: 100%;
 }
 .boton{
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1.3rem;
   background-color: #0D47A1;
   color: white;
   border-radius: 5px;
@@ -423,7 +423,7 @@ video{
   }
   /* manu movile */
   .fa-bars{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -488,7 +488,7 @@ video{
   /* contacto ------------------------------- */
   /* manu movile */
   .fa-bars{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -500,6 +500,6 @@ video{
   }
   /* manu movile */
   .fa-bars{
-    display: none;
+    display: none !important;
   }
 }
